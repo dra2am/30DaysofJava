@@ -1,0 +1,67 @@
+//main : identfier for method
+//void : a return type, nothing
+//public : access modifier, this method is available everywhere
+//static : no instance of a class is needed
+
+//(String[] args) : this is a parameter
+
+Data Types:
+Primitives:
+    boolean, 
+    Character:char, 
+    Integer: byte, short, int, long, 
+    Floating-pont: float, double
+Non-Primitives:
+    String, Arr...etc
+    
+Arguments:
+    *Information passed into a method (part of the calling)
+
+    public static void main(String[] args){...}
+    this method is expecting and arg that is a string
+    in an array of args
+    arg["number"] is the position of the arr the arg is in
+    sysout("Hello " + args[0]) >>> will print the 
+    first arg in arr
+    add argument at the end of "java file.java" this will add
+    it to arg array.
+
+Parameter:
+    *When we define a method, we give it parameters, when we
+    call a method, we give it arguments
+    *variables to store arguments
+
+Control Flow:
+    Java uses .equals for === and ==
+    for and while loops are the same, look over do while loops which
+    will always run at least once.
+
+Arrays:
+    declare type and array before the name of array:
+    int[] arrName = 
+    then the size of the array:
+    int[] arrName = new int[5]
+
+Lists and ArrayLists:
+    List: the interface
+    ArrayList: implementation.
+    Interface: defines what requirements must be met for 
+    implementation
+    when we create an array list, it meets all the requirements
+    to be considered a list
+
+    List<Type it takes> nameList = new ArrayList<Type>()
+
+    to add to List:
+    nameList.add(value)
+
+   Oracle docs for implementation
+
+Stacks and Queues:
+    Stack: first in is the last out (stack of dishes)
+    Queues: first in first out (like a grocery line)
+
+    Linked lists can be used as a Queue
+
+Call Stack:
+    stores information about the active method of a program

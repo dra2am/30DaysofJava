@@ -1,5 +1,5 @@
 
-public class maze {
+public class twoDArray {
     public static void main(String[] args) {
         // [row][col] 2d arr
         int[][] data = { { 4, 6, 3, 10 }, { 4, 2, 40, 1 }, { 5, 34, 1, 43 } };

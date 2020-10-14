@@ -19,8 +19,15 @@ public class javaArray {
         in.close();
 
         // now print each item in the array
-        for (int i = 0; i < size; i++) {
-            System.out.println(grades[i]);
+
+        // method one:
+        // for (int i = 0; i < size; i++) {
+        // System.out.println(grades[i]);
+        // }
+
+        // method two:
+        for (int item : grades) {
+            System.out.println(item);
         }
 
     }

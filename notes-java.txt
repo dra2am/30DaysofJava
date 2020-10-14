@@ -41,6 +41,9 @@ Arrays:
     int[] arrName = 
     then the size of the array:
     int[] arrName = new int[5]
+    OR declare and populate array in one step
+    int[] arrName = {1,2,3} 
+
 
 Lists and ArrayLists:
     List: the interface

@@ -1,6 +1,7 @@
 package MazeSolver;
 
 public class Position {
+    // keep track of position
     public int x;
     public int y;
 
@@ -8,6 +9,6 @@ public class Position {
     public Position(int x, int y) {
         // refers to public ints above
         this.x = x;
-        this.y = x;
+        this.y = y;
     }
 }

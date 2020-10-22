@@ -16,9 +16,12 @@ public class mazeSolver {
 
     public static void main(String[] args) {
         // default position
-        Position p = new Position(3, 0);
+        Position p = new Position(0, 3);
         path.push(p);
-        // changes visited position to 0, a wall
-        maze[path.peek().y][path.peek().x] = 0;
+        // keep track of where we've been
+        // .peek gives us first elem of list
+        // setting position we've been to = 0, wall
+        maze[path.peek().x][path.peek().y] = 0;
+
     }
 }

@@ -32,9 +32,8 @@ Parameter:
     *variables to store arguments
 
 Control Flow:
-    Java uses .equals for === and ==
-    for and while loops are the same, look over do while loops which
-    will always run at least once.
+    Java uses .equals to make a comparison
+    for and while loops are similar to JS
 
 Arrays:
     declare type and array before the name of array:
@@ -43,6 +42,7 @@ Arrays:
     int[] arrName = new int[5]
     OR declare and populate array in one step
     int[] arrName = {1,2,3} 
+    make a 2d array as follows: int[][] arrName = {...}
 
 
 Lists and ArrayLists:
@@ -64,7 +64,35 @@ Stacks and Queues:
     Stack: first in is the last out (stack of dishes)
     Queues: first in first out (like a grocery line)
 
-    Linked lists can be used as a Queue
+    Linked lists can be used as a Queue/Stack
 
 Call Stack:
     stores information about the active method of a program
+
+Classes:
+    Keywords:
+        public : an access modifier. unrestricted access
+        to the class
+        private : access modifier. no other class may access
+        that class
+        protected : only classes in the same package can 
+        access that class
+
+    the access modifier can also be removed
+
+    encapsulation: hide the fields and methods from 
+    access publicly. 
+
+    generally vars inside classes will be private.
+    getters and setters are public
+
+    "this" refers to the instance variable when working 
+    inside a method in a class 
+
+    Created classes can be treated as a data type:
+        ex: Triangle triangleA = new Triangle(args....)
+        it is important to init a class instance w the 
+        new keyword.
+        classes have some automatic methods and functionality
+        you can also create your own
+

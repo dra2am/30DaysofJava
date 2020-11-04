@@ -96,3 +96,37 @@ Classes:
         classes have some automatic methods and functionality
         you can also create your own
 
+     Constructor Methods: (we can use this as a setter)
+        can set the properties of variables in a class when 
+        that class is called.
+        Other Constructor  methods can be created to account for
+        the user calling an empty constructor/requiring only certain
+        variables be declared while others can be defaulted. 
+
+     Getters: 
+        return information about a variable when called on a 
+        class instance.
+
+    Other methods can be created to carry out operations on 
+    instances of a class.
+
+    Inheritance:
+        to inherit from another class, use the extends keyword:
+            public class Dog extends Animal{...}
+        then you need to call the constructor from the class
+        you are extending from:
+            {
+                public Dog(...constructor params){
+                    super(...constructor vars)
+                    **you can set instance vars here
+                }
+            }
+        "super" calls the contructor from the class that it is 
+        extending from (in this case, calls Animal's constructor)
+
+        inside super, you can pre-define params by giving them a
+        value and add params.
+
+        Now we can add variables and methods unique to dog while 
+        also using variables and methods from the Animal class.
+

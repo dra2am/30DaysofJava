@@ -2,9 +2,8 @@ package BankClass;
 
 public class Main {
     public static void main(String[] args) {
-        BankAccount myAccount = new BankAccount(001, 100, "email@email.com", "Jane
-        Smith", "555-5555");
-        //test default
+        BankAccount myAccount = new BankAccount(001, 100, "email@email.com", "Jane Smith", "555-5555");
+        // test default
         // BankAccount myAccount = new BankAccount();
 
         // test getters

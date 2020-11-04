@@ -7,6 +7,6 @@ public class Maze {
     // created Position to store x and y
     public Position start;
     // link list used as a stack
-    public LinkedList<Position> path;
+    public LinkedList<Position> path = new LinkedList<Position>();
 
 }

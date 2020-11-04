@@ -130,3 +130,73 @@ Classes:
         Now we can add variables and methods unique to dog while 
         also using variables and methods from the Animal class.
 
+    Method Overloading: (Compile Time Polymorphism)
+        providing two or more methods in a class with the same name 
+        but different params.
+        return type may be the same or different 
+        reduces duplicating code
+
+        Static and instance methods can be overloaded
+
+        methods must have SAME NAME and DIFFERENT PARAMS
+    
+    Method Overriding: (Runtime Polymorphism/Dynamic Method Dispatch)
+        defining a method in a child class that already exists in the 
+        parent class w the SAME NAME and SAME PARAMS
+
+        By extending the parent class, child class get all methods 
+        in parent
+
+        Uses @Override immediately above method definition
+
+        Can only override instance methods
+        Only inherited methods can be overwritten 
+        Constructors and private methods cannot be 
+        Methods that are final cannot be 
+
+        A subclass can use super.methodName() to call the super class
+        version of an overridden method.
+
+    Static Methods:
+        use static modifier
+        cant access instance methods and variables directly
+        Used for operations that dont require data from an instance of
+        the class (from "this")
+
+        Dont use "this"
+        If doesn't use instance vars, should be static
+        ex: main
+
+    Instance Methods:
+        belong to an instance of a class
+        to use, we need to init the class by using "new"
+
+        can access instance methods and variables directly
+        can access static methods and variables directly
+
+    Instance or Static Method?:
+        If the method does not use instance variables or instance
+        methods, it should probably be a static method 
+
+    Static Variable:
+        delcared with static
+        every instance of the class shares the same static variable
+        if changes are made to that variable, all other instances
+        will see the effect of the change
+
+        not used often
+    
+    Instance Variable: 
+        dont use static
+        field or member vars
+        Instance variables belong to an instance of a class
+
+        every instance has its own copy of an instance variable
+        every instance have a different value (state)
+        instance variables represent the state of an instance
+    
+    
+
+
+
+

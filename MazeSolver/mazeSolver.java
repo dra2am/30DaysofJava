@@ -1,7 +1,11 @@
 package MazeSolver;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedList;
+import java.util.Scanner;
 
 public class mazeSolver {
 
@@ -10,37 +14,28 @@ public class mazeSolver {
     // 1 = path
     // 2 = destination
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         // list of mazes
         ArrayList<Maze> mazes = new ArrayList<Maze>();
-
-        // creating maze m as an instance of maze class
         Maze m = new Maze();
 
-        int[][] maze = { { 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0 }, { 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0 },
-                { 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1 }, { 1, 1, 1, 2, 0, 1, 1, 1, 0, 1, 0 },
-                { 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0 }, { 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1 } };
+        // get maze from file
+        Scanner in = new Scanner(new File("mazeSolver/mazes.txt"));
+        // get number of rows
+        int rows = Integer.parseInt(in.nextLine());
+        m.maze = new int[rows][];
 
-        // setting properties of maze m
-        m.maze = maze;
-        m.start = new Position(4, 8);
-        m.path = new LinkedList<Position>();
+        // loops through file
+        for (int i = 0; i < rows; i++) {
+            // prints first next line as string
+            String line = in.nextLine();
+            // convert string to int arr
+            m.maze[i] = Arrays.stream(line.split(", ")).mapToInt(Integer::parseInt).toArray();
+        }
 
-        // creating maze n as an instance of maze class
-        Maze n = new Maze();
-
-        int[][] maze_n = { { 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0 }, { 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0 },
-                { 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1 }, { 1, 1, 1, 2, 0, 1, 1, 1, 0, 1, 0 },
-                { 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0 }, { 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1 } };
-
-        // setting properties of maze n
-        n.maze = maze_n;
-        n.start = new Position(4, 8);
-        n.path = new LinkedList<Position>();
-
-        // adding mazes to arraylist of mazes
+        // get starting position and add
+        m.start = new Position(Integer.parseInt(in.nextLine()), Integer.parseInt(in.nextLine()));
         mazes.add(m);
-        mazes.add(n);
 
         // loops through arraylist maze to solve all mazes
         int i = 0;

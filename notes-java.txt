@@ -194,8 +194,44 @@ Classes:
         every instance has its own copy of an instance variable
         every instance have a different value (state)
         instance variables represent the state of an instance
-    
-    
+
+Object Oriented Programming: OOP
+    Composition:
+        modeling parts of the greater whole
+        a class can be a component of another class ex:
+        Resolution class is part of Monitor class, but Monitor
+        isn't a Resolution.
+
+        public class PC{
+            private Case theCase;
+            private Monitor monitor;
+            private Motherboard motherboard;
+
+            public PC(...contructory stuff){
+                ...this.constructory stuff
+            }
+
+            ...getter methods...
+        }
+
+        advantages of composition over inheritance: with inherit you can
+        only inherit from one class at a time. With compostition,
+        you can use many other classes (you arent inheriting anything
+        from them though like you would w extends)
+
+        in the main class, you will have to init all the classes
+        PC class needs before passing them into PC class.
+
+        Accessing methods from classes inside PC:
+            thePC.getMonitor().drawPixelAT(...)
+            -use the getter method to return class and then get
+            method from that class.
+
+        rule: look at using composition before inheritance due to 
+        its greater flexibility
+
+
+
 
 
 
